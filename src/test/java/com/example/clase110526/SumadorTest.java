@@ -70,23 +70,21 @@ public class SumadorTest {
     assertEquals(14, resultado);
   }
 
-  /*
-   * @Test
-   * void delimitadorPersonalizadoPipe() {
-   * Sumador sumador = new Sumador();
-   * 
-   * assertEquals(14, sumador.sumar("//|\n1|3|6|4"));
-   * }
-   */
+  @Test
+  void delimitadorPersonalizadoPipe() {
+    Sumador sumador = new Sumador();
+
+    int resultado = sumador.sumar("//|\n1|3|6|4");
+
+    assertEquals(14, resultado);
+  }
 
   /*
    * @Test
    * void delimitadorPersonalizadoPipe() {
    * Sumador sumador = new Sumador();
    * 
-   * int resultado = sumador.sumar("//|\n1|3|6|4");
-   * 
-   * assertEquals(14, resultado);
+   * assertEquals(14, sumador.sumar("//|\n1|3|6|4"));
    * }
    */
 
